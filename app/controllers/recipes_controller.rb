@@ -44,7 +44,7 @@ class RecipesController < ApplicationController
    flash[:success] = "Recipe deleted successfully"
    redirect_to recipes_path
   end
-
+  
   private
   
    def set_recipe

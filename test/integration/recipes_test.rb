@@ -3,7 +3,7 @@ require 'test_helper'
 class RecipesTest < ActionDispatch::IntegrationTest
   
   def setup
-   @chef=Chef.create!(chefname: "sushma", email: "sush@gmail.com")
+    @chef=Chef.create!(chefname: "sruthi", email:"shru@gmail.com",password:"password", password_confirmation:"password")
    @recipe=Recipe.create(name:"vegetable soute", description: "great vegetable soute , add vegeatble and oil")
    @recipe2=@chef.recipes.create(name:"Bread rasmalai", description: "A quick bread snack recipe")
    @recipe2.save
@@ -30,7 +30,7 @@ class RecipesTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]" , edit_recipe_path(@recipe), text: "edit this recipe"
     assert_select "a[href=?]", recipe_path(@recipe), text: "Delete"
     assert_select "a[href=?]", recipe_path, text: "return to recipes listing"
-    end
+  end
   
   test "to create valid recipes" do 
     get new_recipe_path
