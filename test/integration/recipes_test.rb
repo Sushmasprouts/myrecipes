@@ -4,9 +4,9 @@ class RecipesTest < ActionDispatch::IntegrationTest
   
   def setup
     @chef=Chef.create!(chefname: "sruthi", email:"shru@gmail.com",password:"password", password_confirmation:"password")
-   @recipe=Recipe.create(name:"vegetable soute", description: "great vegetable soute , add vegeatble and oil")
-   @recipe2=@chef.recipes.create(name:"Bread rasmalai", description: "A quick bread snack recipe")
-   @recipe2.save
+    @recipe=Recipe.create(name:"vegetable soute", description: "great vegetable soute , add vegeatble and oil")
+    @recipe2=@chef.recipes.create(name:"Bread rasmalai", description: "A quick bread snack recipe")
+    @recipe2.save
   end
   
   test "should get recipes index" do
