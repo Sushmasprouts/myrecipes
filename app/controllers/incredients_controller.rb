@@ -25,7 +25,7 @@ class IncredientsController < ApplicationController
       redirect_to @incredient
     else
       render 'edit'
-    end
+      end
   end
   
   def show
@@ -40,7 +40,7 @@ class IncredientsController < ApplicationController
   
    def incredient_params
     params.require(:incredient).permit(:name)
-  end
+   end
   
   def set_incredient
     @incredient= Incredient.find(params[:id])
