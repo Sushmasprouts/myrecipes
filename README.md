@@ -1,24 +1,13 @@
-# README
+This app is feature packed build with ruby 2.4 and rails 5.0 and comes with a chef app where they can add reciepies. It also includes -
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- User authentication
 
-Things you may want to cover:
+- image uploading
 
-* Ruby version
+- Realtime chat and comments where chefs can chat with each other and comment on each others' recipes
 
-* System dependencies
+- Like/dislike feature
 
-* Configuration
+- Custom styling
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Happy coding!
